@@ -1,0 +1,112 @@
+        /* Base styles */
+        
+        * {
+            box-sizing: border-box;
+            color: white;
+            padding: 0;
+            margin: 0;
+        }
+        
+        p {
+            color: white;
+            font-size: 4vh;
+            text-transform: uppercase;
+        }
+        /* Header styles */
+        
+        header {
+            height: 10vh;
+            background-color: orangered;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-basis: 100%;
+        }
+        /* Main styles */
+        
+        main {
+            display: flex;
+            flex-wrap: no-wrap;
+            flex-basis: 1170px;
+            height: 80vh;
+        }
+        /* Section ans aside  styles */
+        
+        .left {
+            background-color: green;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-basis: 20%;
+            order: 10;
+        }
+        
+        section {
+            background-color: #008cff;
+            display: flex;
+            align-items: flex-start;
+            text-align: center;
+            flex-basis: 60%;
+            order: 20;
+        }
+        
+        .container {
+            width: 100%;
+            height: 100%;
+            font-size: inherit;
+        }
+        
+        .right {
+            background-color: pink;
+            display: flex;
+            flex-basis: 20%;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 0;
+            order: 30;
+        }
+        /* Footer styles */
+        
+        footer {
+            background-color: #c700c76c;
+            flex-basis: 100%;
+            height: 10vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* Responsive styles */
+        
+        @media (min-width: 768px) and (max-width: 992px) {
+            .left {
+                flex-basis: 100%;
+                order: 30;
+                height: 40vh;
+            }
+            main {
+                flex-wrap: wrap;
+            }
+            .right {
+                flex-basis: 20%;
+            }
+            section {
+                flex-basis: 80%;
+                height: 40vh;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+            .left {
+                flex-basis: 100%;
+                order: 30;
+            }
+            .right {
+                flex-basis: 100%;
+            }
+            section {
+                flex-basis: 100%;
+            }
+        }
