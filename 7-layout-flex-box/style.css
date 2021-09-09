@@ -26,7 +26,7 @@
         
         main {
             display: flex;
-            flex-wrap: no-wrap;
+            flex-wrap: nowrap;
             flex-basis: 1170px;
             height: 80vh;
         }
@@ -48,12 +48,7 @@
             text-align: center;
             flex-basis: 60%;
             order: 20;
-        }
-        
-        .container {
-            width: 100%;
-            height: 100%;
-            font-size: inherit;
+            object-fit: cover;
         }
         
         .right {
@@ -96,6 +91,9 @@
         }
         
         @media (max-width: 768px) {
+            p {
+                font-size: 2vh;
+            }
             main {
                 flex-direction: column;
             }
